@@ -28,7 +28,7 @@ support the best model in production.
 ## Goals
 - Understand key elements of modern MLOps and how it helps improve and accelerate ML practices.
 - Design experiments, deployment environments and MLOps pipelines in Azure Machine Learning.
-- Get hands-on experience in building continuous integration and continuous deployment pipelines with new Azure ML vNext and Github Actions.
+- Get hands-on experience in building continuous integration (CI) and continuous deployment (CD) pipelines with new Azure ML vNext and Github Actions.
 
 ## Structure
 - [Pre-Workshop Checklist](documents/part_tips.md)
@@ -65,25 +65,25 @@ support the best model in production.
 ## Workshop Scenario
 > **Note: Read before starting the workshop!**
 
-Your team has been working on a new machine learning (ML) problem (predicting taxi fares in New York). The
-team has been performing exploratory work on the data and has come to a state where the model is solidified.
-Now, it is time to put a structure into the work so that the team can iterate faster toward building a fully
-functional solution. So far, team members have been working mostly with Jupyter notebooks on their
-personal compute. 
+Your team has been working on a new machine learning (ML) problem: predicting taxi fares in New York. The
+team has been performing exploratory work on the data and has has solidified the machine learning model.
+Now, it is time to impose a structure upon the code-base so that the team can iterate faster and build a fully
+functional solution. So far, team members have been working mostly within Jupyter notebooks on their local
+machine. 
 
 To re-engineer this into a functional MLOps process, the following steps will be taken:
 1. The code will be modularized (refactored into separate python modules) and parameterized (configured so it
    can be re-run with different values). This will lay the foundation for good software practices and allow
-   multiple data scientists/engineers to work collaboratively on the code. (Later, we will reinforce DevOps
-   practices around continuous integration and continuous deployment with specific workflows to support model
-   training and evaluation. MLOps builds off a strong foundation in DevOps and looks to additionally manage
-   the model and data lifecycles to support the best model in production.)
+   multiple data scientists/engineers to work collaboratively on the code. Later, DevOps practices around 
+   continuous integration and continuous deployment (CI/CD) will be reinforced with specific workflows to 
+   support model training and evaluation. (MLOps builds off of a strong foundation in DevOps and looks 
+   to additionally manage the model and data lifecycles to support the best model in production.)
 2. After successfully restructuring the Jupyter notebook and running the modules locally, your team will
-   leverage Microsoft Azure to run the ML experiment at scale. They will take advantage of experiment tracking
-   and model management capabilities in Azure ML to keep track of experiments. The team will then deploy the
+   leverage Microsoft Azure to run the ML experiment at scale. You and your teamwill take advantage of experiment tracking
+   and model management capabilities in Azure Machine Learning to keep track of experiments. The team will then deploy the
    model as a rest endpoint for real time inferencing.
-4. They will then setup a centralized version control in Github to keep track of project code and manage different
-   feature development tracks and releases. They will need to understand how to automate and orchestrate
+4. You and your team will then setup a centralized version control in Github to keep track of project code and manage different
+   feature development tracks and releases. The team will need to understand how to automate and orchestrate
    common tasks such as environment setup, training, and testing. 
 5. After setting up GitHub for MLOps, your team will start automating the model training and evaluation
    process with a Continuous Integration (CI) pipeline.
